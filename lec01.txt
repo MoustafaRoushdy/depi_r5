@@ -1,0 +1,24 @@
+1. Dir is a ( folder )
+2. pwd ( print working directory) 
+3. echo ~ => print home dir
+4. echo $HOME => print home dir
+5. mkdir <dirname> => create new directory
+6. cd <dirname> => change directory
+7. ls <dirname> => list directory
+8. ls -l <dirname> => long listing to the directory 
+9. <command> <argument/s> <options>
+10. /usr/bin, /bin  => external commands 
+11. shell builtin commands => ls, echo, etc
+12. touch <filename> => to create new file
+13. rm <filename> => to remove a file
+14. rm -r <dirname> => to remove a dir with all subdir
+15. rmdir <dirname> => remove empty directory
+16. mv <source> <destination> => to move a file to a different dir
+                              => to rename a file or a dir
+17. cp <source> <destination> => copy a file 
+18. type <command> => to see if a command is shellbuiltin or external 
+19. ".." is the parent directory
+20. "." current directory
+21. <command> --help => to see command usage and options
+22. ls -a => to see hidden files
+23. man <command>  => to read the manual of a command
