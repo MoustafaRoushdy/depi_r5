@@ -1,0 +1,20 @@
+1. more, less tools to navigate files
+2. cat <filename> => display file in the terminal 
+3. tac <filename> => display file from end to beginning 
+4. fallocate -l <size> <filename> => to create a file with specifc size (((optional)))
+5. gzip <file names> => compress file
+6. gunzip <file name> => decompress file
+7. tar -czf <filename> <files> => archieve some files
+    c => create 
+    f => file
+    z => compress using gzip
+8. tar -xf <filename> => unarchive file
+    x => extract
+    f => file
+9. zcat => to display compressed file
+10. > <filename> => to redirect stdoutput to a file
+11. 2> <filename> => to redirect stderror to a file
+12. >> <filename> => to append stdout to afile
+13. 2>> <filenname> => to appnd stderror to a file
+14. grep <pattern> <filename> => to search in a file
+15. &> <filename> => redirect both stdout and stderror to a file
