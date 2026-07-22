@@ -18,3 +18,13 @@
 13. 2>> <filenname> => to appnd stderror to a file
 14. grep <pattern> <filename> => to search in a file
 15. &> <filename> => redirect both stdout and stderror to a file
+16. find <dir> -name <filename> => to search for a file in a dir
+17. sudo <command> => run a command as the root user
+18. echo $SHELL => to see shell for current user
+19. chsh -s <shell path> username => to update shell for a user
+18. x=y  => to set a value for a variable 
+19. to make it permanent add it to .bashrc or .profile
+20. which <command> => to see a full path of a command
+21. alias <alias>=<command> => to set an alias for a command
+22. echo $PATH => to see different binaries directories
+
