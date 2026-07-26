@@ -8,7 +8,7 @@
 
 1. users types ( User Account, System Account, Super user)
 2. id <username> => get details about a specfic user
-3. useradd -d <homedir> -s <shell> -g <main group> -G <groups> -p <username> 
+3. useradd -d <homedir> -s <shell> -g <main group> -G <groups> -p <password> <username> 
 4. usermod -d <homedir> -s <shell> -g <main group> -G <groups> <username>
 5. userdel <username> => to delete a user
 6. passwd <username> => to set or udpate password of a user
