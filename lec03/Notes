@@ -1,0 +1,6 @@
+1. systemd vs init ls -l /sbin/init
+2. systemctl get-default  ( graghical, muti-user,etc )
+3. systemctl set-default <target> 
+4. lshw => get all details about all hardware connected to the server
+5. sudo -i => to switch to the root user
+6. file <filename> => details about file type
