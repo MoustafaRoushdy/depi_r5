@@ -4,3 +4,18 @@
 4. lshw => get all details about all hardware connected to the server
 5. sudo -i => to switch to the root user
 6. file <filename> => details about file type
+
+
+1. users types ( User Account, System Account, Super user)
+2. id <username> => get details about a specfic user
+3. useradd -d <homedir> -s <shell> -g <main group> -G <groups> -p <username> 
+4. usermod -d <homedir> -s <shell> -g <main group> -G <groups> <username>
+5. userdel <username> => to delete a user
+6. passwd <username> => to set or udpate password of a user
+7. su -c <command> <username> => to run a command as a different user
+8. /etc/passwd => contains details about users
+9. /etc/group  => contans details about group
+10. visudo => to edit the sudeors file /etc/sudoers
+11. who => to see who are logging to the server
+12. last => last activity in the server
+
