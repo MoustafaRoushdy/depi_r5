@@ -18,4 +18,4 @@
 10. visudo => to edit the sudeors file /etc/sudoers
 11. who => to see who are logging to the server
 12. last => last activity in the server
-
+13. groupadd <groupname> => to create a new group
