@@ -19,3 +19,9 @@
 11. who => to see who are logging to the server
 12. last => last activity in the server
 13. groupadd <groupname> => to create a new group
+
+
+1. kernel is the main component of the os ( interviews )
+2. uname -r => version of kernel 
+3. dmesg => to get kernel logs ( messages ) 
+
