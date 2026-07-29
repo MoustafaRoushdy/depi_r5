@@ -14,3 +14,12 @@ chmod ugo +- rwx, chmod u+r,u-wx,go-rwx
 chown <user>:<group> <file> => update user,group owner of a file
 chgrp <group> <file> => update group owner of the file
 chown,chmod -R     => to update owner,perm recursivley for a dir
+
+
+Package Manager
+1. dpkg -i <packepath> => to install a package in a debian distro
+2. apt install <package name> => to install a package resolving dependencies
+3. apt remove <package name> => remove a package
+4. apt search <package name> => search for a package
+5. /etc/apt/sources.list.d  => files contains sources links
+6. cat /etc/os-release => to see your distro 
