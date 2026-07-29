@@ -2,3 +2,6 @@
 2. generate a keypair
 3. copy your public key to the remote server
 4. ssh without password, using your private key
+
+
+Read and understand pdf 98-107
