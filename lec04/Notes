@@ -1,0 +1,4 @@
+1. ssh-keygen -t <type>  => to generate a key pair (private,public keys)
+2. ssh-copy-id -i <key> user@host => to copy your public key to a remote server
+3. scp -i <idenity> <source> <destination>
+   scp -i <identity> file.txt user@host:path
