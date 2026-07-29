@@ -1,0 +1,4 @@
+1. ssh using your username and password
+2. generate a keypair
+3. copy your public key to the remote server
+4. ssh without password, using your private key
