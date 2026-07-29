@@ -2,3 +2,15 @@
 2. ssh-copy-id -i <key> user@host => to copy your public key to a remote server
 3. scp -i <idenity> <source> <destination>
    scp -i <identity> file.txt user@host:path
+
+
+4. r=4
+   w=2
+   x=1
+
+chmod 570
+chmod 400, chmod u+r,u-wx,go-rwx
+chmod ugo +- rwx, chmod u+r,u-wx,go-rwx
+chown <user>:<group> <file> => update user,group owner of a file
+chgrp <group> <file> => update group owner of the file
+chown,chmod -R     => to update owner,perm recursivley for a dir
