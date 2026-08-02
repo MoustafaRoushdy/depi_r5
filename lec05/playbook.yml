@@ -1,0 +1,12 @@
+- name: Ensure that users exist
+  hosts: all
+  tasks:
+  - name:  Ensure that file1.txt exist
+    file: 
+      path: /home/ec2-user/file1.txt
+      state: absent
+  - name: Ensure that user Ahmed exist
+    become: true
+    user:
+     name: Ahmed
+     uid: 1040

@@ -5,3 +5,9 @@
 5. systemctl enable <serivcename> => start serivce with os
 6. systemctl disable <servicename> => don't start service with os
 7. systemctl status <servicename> => to see if serivce is running/stopped 
+
+
+
+ansible-playbook -i <inventory> <playbook file>
+ansible-doc <modulename>
+familiarize yourself with ansible documentation: https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_intro.html
