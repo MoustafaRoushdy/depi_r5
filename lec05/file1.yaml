@@ -1,0 +1,40 @@
+# info = ["ahmed","29","75k"]
+
+# key: value
+# dic  => keys: values
+# array => key: [values]
+
+name: "ahmed"
+age: 29
+weight: 75k
+
+grades: [80,90,70,55]
+
+grades2:
+- 80
+- 90
+- 70
+- 55
+
+employees:
+- name: ahmed
+  age: 20
+- name: mohamed
+  age: 22
+- name: mahmoud
+  age: 25
+
+employee:
+   name: ahmed
+   age: 20
+   colors: ["red","blue","white"]
+
+# most comon syntac error , two values for the same key
+# student: ahmed
+#   name: mohamed
+#   age: 20
+
+
+x:
+  y: z
+
