@@ -1,0 +1,7 @@
+1. systemctl start <servicename> => to start a service
+2. systemctl stop <servicename> => to stop a service
+3. systemctl restart <servicename> => to restart a service
+4. systemctl reload <servicname> => to reload a service
+5. systemctl enable <serivcename> => start serivce with os
+6. systemctl disable <servicename> => don't start service with os
+7. systemctl status <servicename> => to see if serivce is running/stopped 

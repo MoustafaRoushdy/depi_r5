@@ -1,0 +1,4 @@
+1. ssh into the server
+2. ask your ai to give you a uniqu service name 
+3. install it using dnf ( sudo dnf install <packagename> )
+4. start, stop, enable, disable the service
