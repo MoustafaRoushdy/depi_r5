@@ -1,12 +1,28 @@
 - name: Ensure that users exist
   hosts: all
+  become: true
   tasks:
   - name:  Ensure that file1.txt exist
     file: 
       path: /home/ec2-user/file1.txt
       state: absent
   - name: Ensure that user Ahmed exist
-    become: true
     user:
      name: Ahmed
      uid: 1040
+
+  - name: Ensure that apache2 is installed
+    dnf: 
+     name: httpd
+     state: present
+
+
+  - name: Ensure the default Apache port is 8080
+    ansible.builtin.lineinfile:
+      path: /etc/httpd/conf/httpd.conf
+      regexp: '^Listen '
+      insertafter: '^#Listen '
+      line: Listen 8080
+
+  # - name: Debug
+  #   shell: "cat /etc/httpd/conf/httpd.conf"

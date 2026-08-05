@@ -1,0 +1,4 @@
+ansible-playbook --diff => to see the change will happen to the files
+ansible-playbook --check => to make a dry run (doesn't actually make the change)
+ansible-lint => check for syntax error and best practice
+ansible-playbook -v, -vv, -vvv => increase the verbosity of the execution of 
