@@ -8,3 +8,10 @@ videos.xyz.net
 /etc/nsswitch.conf => you can switch dns and hosts file presdedence
 /etc/reslov.conf => nameserver => dns server entry
                     search => domain to suffix your search 
+
+
+ansible vars
+vars syntax "{{ var_name }}"
+vars could be in the playbook or inventory file or as a command line 
+in playbook as "vars" key 
+--extra-vars if given in the command line

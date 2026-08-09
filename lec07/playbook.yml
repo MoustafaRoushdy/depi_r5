@@ -1,0 +1,34 @@
+- name: Ensure that users exist
+  hosts: all
+  become: true
+  vars:
+   username: ahmed
+  tasks:
+  - name:  Ensure that file1.txt exist
+    file: 
+      path: /home/ec2-user/{{ filename }}
+      state: touch
+  - name: Ensure that user Ahmed exist
+    user:
+     name: "{{ username }}"
+     uid: 1040
+
+  - name: Ensure that apache2 is installed
+    dnf: 
+     name: 
+      - "{{ packages }}"
+     state: present
+
+
+
+
+
+  # - name: Ensure the default Apache port is 8080
+  #   ansible.builtin.lineinfile:
+  #     path: /etc/httpd/conf/httpd.conf
+  #     regexp: '^Listen '
+  #     insertafter: '^#Listen '
+  #     line: Listen 8080
+
+  # - name: Debug
+  #   shell: "cat /etc/httpd/conf/httpd.conf"
