@@ -1,0 +1,10 @@
+videos.xyz.net
+=> . root level name
+=> .net => top level domain 
+=> .xyz => secondery level domain ( domain apex )
+=> vidoes => subdomian 
+
+/etc/hosts => you can add IPs with domains in it 
+/etc/nsswitch.conf => you can switch dns and hosts file presdedence
+/etc/reslov.conf => nameserver => dns server entry
+                    search => domain to suffix your search 
