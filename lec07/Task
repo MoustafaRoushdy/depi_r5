@@ -1,0 +1,15 @@
+Read from page 63:90 in Linux file
+Linux Assigment in LMS
+
+10.0.0.0/8
+10.0.0.1
+10.0.5.243
+10.200.198.7
+
+192.168.0.0/16
+
+172.16.0.0/12
+
+
+server (ssh => 22)  <= ephmeral port client1
+                    <= ephmeral port client2
