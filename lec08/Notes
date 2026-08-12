@@ -1,0 +1,14 @@
+1. ip link  => to list and modify interfaces in your host
+2. ip a show dev <devname> => to list IPs assigned to a certain interface
+3. telnet <host> <port> => to check if I can access a certain port in a certain host
+4. host <hostname> => get ip of the host
+5. host <ip> => get hostname of an IP
+6. arp => address resolution protocal => to see mac address mapped to IP
+7. ip i set up/down => to set interface up/down
+
+
+Troubleshooting steps:
+1. ip link => to see if the interface is already up 
+2. nslookup => to check if the dns is working
+3. traceroute <host> => to check the hop that has an issue
+4. ss ( or netstat ) => to check ports a server is listening on
