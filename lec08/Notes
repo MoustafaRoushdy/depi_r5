@@ -12,3 +12,13 @@ Troubleshooting steps:
 2. nslookup => to check if the dns is working
 3. traceroute <host> => to check the hop that has an issue
 4. ss ( or netstat ) => to check ports a server is listening on
+
+
+
+Ansible-Galaxies
+
+1. ansible-galaxy collection --help
+2. ansible-galaxy role --help
+3. ansible-galaxy role init <rolename>
+4. ansible-doc -l <collectionname> => to list all modules and plugins in a collection
+5. ansibld-doc -l -t module <collectionname> => to list only modules in a collection

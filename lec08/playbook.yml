@@ -1,0 +1,8 @@
+---
+- name: Test using Roles
+  hosts: all
+  become: true
+  roles:
+   - configure_apache
+  tasks:
+   - ansible.builtin.shell: "echo Hello world!"

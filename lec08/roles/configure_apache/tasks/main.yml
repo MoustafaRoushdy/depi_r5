@@ -1,0 +1,14 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for configure_apache
+- ansible.builtin.dnf:
+    name: httpd
+    state: latest
+
+- ansible.builtin.copy:
+    src: httpd.conf
+    dest: /etc/httpd/httpd.conf
+
+- ansible.builtin.service:
+     state: restarted
+     name: httpd
