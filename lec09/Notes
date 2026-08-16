@@ -1,0 +1,15 @@
+docker pull <imagename> => to download an image from remote dockerhub to your local machine
+docker run <imagename>  => to start a container from this image
+docker run -d <imagename> => to start a container in detatched mode
+docker stop <containername or container id> => to stop a container
+docker start <containername or container id > => to start a container 
+docker ps => to list all running containers
+docker ps -a => to list all container including stopped or exit ones
+docker rm <container name or Id> => to remove a contaner
+docker container prune => to remove all stopped containers
+docker rmi <image name> or docker image rm => to remove an image
+docker image prune => to remove all untagged images
+docker imamge prune -a => to remove all unused images
+docker attach <container name or id> => to attache to a container
+docker exec <container name or id> command => to run a command inside a container
+docker exec -it <container name> /bin/bash => to start a bash terminal in the container
