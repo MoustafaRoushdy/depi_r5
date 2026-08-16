@@ -1,0 +1,10 @@
+1. if you are using any ubuntu disto
+follow these steps to download docker locally 
+https://docs.docker.com/engine/install/ubuntu/
+if you have any other distro, please follow your distor instructions
+2. please do these steps to make sure you can run docker without sudo 
+https://docs.docker.com/engine/install/linux-postinstall/
+3. run a container from openssh image https://hub.docker.com/r/linuxserver/openssh-server
+make sure that it is running and send me a screenshot
+
+
