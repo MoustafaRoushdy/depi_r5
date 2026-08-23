@@ -1,0 +1,12 @@
+1. Launch ec2 => google it
+2. create a volume with 10G size, GP3 => google it 
+3. attach the volume to to instance, dev name /dev/sdb => google it
+switch to root => sudo -i 
+4. exporle current disk
+   a. lsblk => see disk name, size, mountpoint
+   b. df -h => see current disk usage
+5. mkfs.xfs <devicename> => create file system in the volume
+6. edit /etc/fstab => to mount this disk to /videos 
+   a. note you need to create /videos 
+7. mount -a => to mount the volumes in /etc/fstab
+8. reboot and make sure that the mount persist 
