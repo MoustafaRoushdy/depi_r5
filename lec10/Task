@@ -10,3 +10,8 @@ switch to root => sudo -i
    a. note you need to create /videos 
 7. mount -a => to mount the volumes in /etc/fstab
 8. reboot and make sure that the mount persist 
+
+
+
+1. https://learn.kodekloud.com/learn/courses/docker-training-course-for-the-absolute-beginner
+2. Create an account on dockerhub
