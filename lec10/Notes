@@ -5,3 +5,26 @@ docker logs <containerid> => to see logs of a container
 docker logs -f <containerid> => to see logs and keep logs appearing
 docker run -p <hostport>:<containerport> <image> => to publish a port 
 
+
+lsblk => to see disks and partition details
+blkid => to see UUID and fs of a disk or partition 
+
+mkfs.<fstype>  => to create a file system on a disk or a partition 
+   1. xfs
+   2. ext4
+   3. ext3
+
+mount <devname> <mountpoint> => to mount a disk to a mount 
+  a. doesn't persist over reboot 
+
+to make the mount persistent => use /etc/fstab
+then mount -a
+
+
+gdisk <diskname> => to create a gpt partition on a disk
+then 
+  a. ? for help
+  b. n for new partition 
+  c. w write the part table and exit
+
+fdisk <diskname> => to create a partiotion on a disk  
