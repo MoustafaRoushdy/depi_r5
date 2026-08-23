@@ -1,0 +1,7 @@
+docker tag <source> <dest> => To tag an image with a second tag
+docker inspect <imageid> => to see details about an image
+docker inspect <containerid> => to see details about a container
+docker logs <containerid> => to see logs of a container
+docker logs -f <containerid> => to see logs and keep logs appearing
+docker run -p <hostport>:<containerport> <image> => to publish a port 
+
