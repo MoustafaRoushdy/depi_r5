@@ -1,0 +1,5 @@
+docker build -t <tagname> .
+docker push <tagname> 
+
+note
+tagname: namespace/repo:tag
