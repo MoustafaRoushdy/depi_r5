@@ -3,3 +3,10 @@ docker push <tagname>
 
 note
 tagname: namespace/repo:tag
+
+docker volume => to manage volumes
+docker volume ls 
+docker volume create => to create a new volume 
+
+docker run -v volumename:<path inside the container> <image>  => volume mount
+docker urn -v <path in host>:<patch inside the container> <image> => bind mount
