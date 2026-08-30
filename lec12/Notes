@@ -1,0 +1,5 @@
+1. docker network create <network name> => to create a network 
+2. docker run --network => to attach a container to a network 
+3. docker network connect <network> <container> => to connect a container to a network
+4. docker inspect <container> => to see details about a container including the networks it's attached to 
+5. docker network inspect <network> => to see details about a network 
