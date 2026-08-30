@@ -3,3 +3,25 @@
 3. docker network connect <network> <container> => to connect a container to a network
 4. docker inspect <container> => to see details about a container including the networks it's attached to 
 5. docker network inspect <network> => to see details about a network 
+
+
+1. docker compose up -d 
+2. docker compose down
+https://docs.docker.com/reference/compose-file/
+
+
+1. dnf install lvm2,  apt install lvm2
+2. pvcreate <devname> => to create a physical volume
+3. vgcreate <volume group> <pv1> <pv2> etc => to create a volume group 
+4. lvcreate -L +size -n <lvname> <vgname>
+
+5. pvs or pvdisaply => to display details about physical volume
+6. vgs or vgdisplay => to display details about volume group
+7. lvs or lvdisplay => to display details about logical volume
+
+8. vgextend <vgname> <pv> => to add a pv to a volume group
+9. lvextend -L +size <vg>/<lv> => to extend a logical volume size
+10. resizefs => to resize a file system 
+11. lvextend -L +size -r <vg>/<lv> => resize file system while extending the logical volume
+
+
