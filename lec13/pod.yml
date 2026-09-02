@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: your-nginx
+  name: your-nginx
+spec:
+  containers:
+  - image: nginx:alpine
+    name: your-nginx
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}

@@ -1,0 +1,14 @@
+1. kubectl run <podname> --image=<imagename> => to run a new pod
+2. kubectl get pod  => to get all running pods
+2.1 kubectl get pod -o wide => to get all running pods with more details
+3. kubectl delete pod <podname> => to delete a pod 
+4. kubectl run <podname> --image=<imagename> --dry-run=client -o yaml > <filename>.yml
+5. kubectl describe <podname> => to get all details about a pod
+6. kubctl create/apply/delete -f <filename> 
+
+
+1. kubectl get node => to get details about nodes
+2. kubectl get node -o wide=> to get more details about nodes
+
+
+
