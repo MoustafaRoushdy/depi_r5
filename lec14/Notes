@@ -1,4 +1,13 @@
+Replicaset
 k create/apply/delete -f <filename>
 k scale rs <rsname> --replicas=numberofreplicas
 k api-resources => get k8s resources with their shortname and api version
 k get/edit/delete <rsname>
+
+
+Deployment
+k create deploy <deployname> --image=<image> --replicas 
+k create deploy <deployname> --image=<image> --replicas --dry-run=client -o yaml > <filename>
+k get/edit/delete/describe deploy
+k create/apply/delete -f <filename>
+
