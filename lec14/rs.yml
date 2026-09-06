@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: frontend
+  labels:
+    app: our-xyz-app
+    tier: frontend
+spec:
+  # modify replicas according to your case
+  replicas: 7
+  selector:
+    matchLabels:
+      tier: frontend
+  template:
+    metadata:
+      labels:
+        tier: frontend
+    spec:
+      containers:
+      - name: web-server
+        image: httpd:latest
+

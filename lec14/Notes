@@ -1,0 +1,4 @@
+k create/apply/delete -f <filename>
+k scale rs <rsname> --replicas=numberofreplicas
+k api-resources => get k8s resources with their shortname and api version
+k get/edit/delete <rsname>
