@@ -1,3 +1,4 @@
+0. run a container from mysql image and allow your php app to connect to it (using docker compose )
 1. containrize "php.index" application, => dependencies are php php-mysqlnd httpd
                                         => I encourage you to use a base image that already has php, httpd and you only install php-mysqlnd
 2. push the image to your dockerhub
@@ -5,8 +6,6 @@
 4. ivite me to the github repo ( moustafaroushdy1@gmail.com )
 breakpoint
 
-5. run a container from mysql image and allow your php app to connect to it (using docker compose )
-breakpoint
 
 note, I need manifest files .yml files
 6. run a deployment from your php application, 3 pods, expose as a nodeport svc
