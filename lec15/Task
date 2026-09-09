@@ -1,0 +1,5 @@
+1. containrize "php.index" application, => dependencies are php php-mysqlnd httpd
+                                        => I encourage you to use a base image that already has php, httpd and you only install php-mysqlnd
+2. push the image to your dockerhub
+3. create a  private github repo with the app and Dockerfile
+4. ivite me to the github repo ( moustafaroushdy1@gmail.com )
