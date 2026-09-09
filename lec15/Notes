@@ -2,3 +2,4 @@ k create svc <svctype> <svcname> --tcp=<port>:<targetport>
 example: k create svc nodeport my-second-svc --tcp=80:80 --dry-run=client -o yaml
 k expose <type>/<name> --name <svcname> --port <port> --target-port <targetport> 
 example: k expose deployment my-nginx --name my-nginx-svc-nodeport --type NodePort --port 81 --target-port 80 --dry-run=client -o yaml
+k get endpointslices => to see endpoints ( ips of targeted pods ) of your services
