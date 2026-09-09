@@ -3,3 +3,15 @@
 2. push the image to your dockerhub
 3. create a  private github repo with the app and Dockerfile
 4. ivite me to the github repo ( moustafaroushdy1@gmail.com )
+breakpoint
+
+5. run a container from mysql image and allow your php app to connect to it (using docker compose )
+breakpoint
+
+note, I need manifest files .yml files
+6. run a deployment from your php application, 3 pods, expose as a nodeport svc
+7. run a deployment from mysql , 1 pod, expose as a clusterip service
+
+
+
+
