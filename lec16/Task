@@ -1,1 +1,7 @@
 update your app deployment to use env vars instead of hardcoding credentials in the app 
+create a new config map called "db-conn", user three keys
+1. user
+2. pass
+3. host
+to add the db the connection string to it 
+reference the configmap in both the db and app deployment
