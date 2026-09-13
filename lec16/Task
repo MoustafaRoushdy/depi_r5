@@ -1,0 +1,1 @@
+update your app deployment to use env vars instead of hardcoding credentials in the app 
