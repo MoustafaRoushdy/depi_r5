@@ -42,3 +42,7 @@ DS:
 STS:
 1. create a Statefulset from mariadb with three replicas and service name "my-db"
 bouns, try to access the first replica with it's service name
+
+
+use Jenkins docs, to install Jenkins in your local machine
+bouns: install it in t3.medium instance in AWS
