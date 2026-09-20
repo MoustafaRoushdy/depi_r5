@@ -1,0 +1,35 @@
+user k8s docs: https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+1. to create a pv with name "data-pv" and storage type "local" and make sure the path in the controle plane node is /data, claim policy should be retain
+2. ceate a pvc with name "data-pvc"
+3. make sure your db deployments uses this pvc to mount the db data "/var/lib/mysql" to the node
+4. make sure that the pv is working as expected 
+   connect to the database "mysql -u root -p" and run this query to insert some data into the database
+CREATE DATABASE IF NOT EXISTS company_db
+    CHARACTER SET utf8mb4 
+    COLLATE utf8mb4_unicode_ci;
+ 
+USE company_db;
+ 
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    bio TEXT,
+    is_active TINYINT(1) DEFAULT 1,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+    UNIQUE KEY unique_email (email),
+    UNIQUE KEY unique_username (username)
+) ENGINE=InnoDB; 
+INSERT INTO users (username, email, password_hash, bio, is_active) VALUES
+('johndoe', 'john.doe@example.com', '$2y$10$e0MYzXy6F4mU...', 'Software engineer from New York.', 1),
+('janesmith', 'jane.smith@example.com', '$2y$10$92IXUNpkjO0r...', 'Graphic designer and tech enthusiast.', 1),
+('alexjones', 'alex.j@example.com', '$2y$10$L2kM7nO8pQ1r...', NULL, 0);
+
+run this to make sure that the data still exist:
+
+select * from users;
+
+
