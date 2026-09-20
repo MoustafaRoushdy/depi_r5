@@ -33,3 +33,8 @@ run this to make sure that the data still exist:
 select * from users;
 
 
+
+
+DS:
+1. create a daeonset using prometheus node exporter image ( search in dockerhub )
+
