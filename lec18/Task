@@ -38,3 +38,7 @@ select * from users;
 DS:
 1. create a daeonset using prometheus node exporter image ( search in dockerhub )
 
+
+STS:
+1. create a Statefulset from mariadb with three replicas and service name "my-db"
+bouns, try to access the first replica with it's service name
