@@ -23,3 +23,4 @@ use "docker pipeline plugin"
 add your github and docker hub credentials
 use pipeline syntax when needed 
 start with scripted pipeline example
+"sudo usermod -aG docker jenkins"
