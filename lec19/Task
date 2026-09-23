@@ -13,7 +13,7 @@ Task Two
 1. update job two to "cat file1.txt"
 2. Install copy artifact plugin (setting => plugins => availabe )
 2. job one should has the name Job1test > add a step to create a file named file1.txt with your name as a content 
-3. first job => configure => Permission to Copy Artifact => add Job1test
+3. first job => configure => Permission to Copy Artifact => add job2test
 in the pod build action choose Archive the artifacts add file1.txt
 4. job2test => add a step Copy artifacts from another project
 add the correct project name and artifact to copy
