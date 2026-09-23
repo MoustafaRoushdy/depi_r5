@@ -18,3 +18,8 @@ in the pod build action choose Archive the artifacts add file1.txt
 4. job2test => add a step Copy artifacts from another project
 add the correct project name and artifact to copy
 
+create a pipline to build and push your php app 
+use "docker pipeline plugin"
+add your github and docker hub credentials
+use pipeline syntax when needed 
+start with scripted pipeline example
