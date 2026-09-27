@@ -1,0 +1,5 @@
+1. Add Deploy stage to your jenkins pipeline
+2. the deploy stage should just run a container from your app
+3. adjust your pipeline to be "pipeline script from scm"
+4. use this helper http://localhost:8080/job/my_pipeline_job/directive-generator/ "input" directive
+to only allow deployment with your approval 
