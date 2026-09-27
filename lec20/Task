@@ -3,3 +3,16 @@
 3. adjust your pipeline to be "pipeline script from scm"
 4. use this helper http://localhost:8080/job/my_pipeline_job/directive-generator/ "input" directive
 to only allow deployment with your approval 
+
+
+1. sudo cp -r ~/.kube /var/lib/jenkins/ 
+2. sudo chown -R jenkins:jenkins /var/lib/jenkins/.kube
+3. create a deploy to k8s stage 
+4. create a parameter to choose one of three
+  deploy on using docker, deploy only to k8s, deploy to docker and k8s 
+5. use when directive 
+6. if docker and k8s ( deployment to both should be parallel)
+7. use parallel directive
+
+for reference: "sed -iE 's/moustafaroushdy\\/app:.*/moustafaroushdy\\/app:${BUILD_NUMBER}/' flask-deploy.yml"  
+
