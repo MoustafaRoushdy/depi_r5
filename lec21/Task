@@ -7,3 +7,5 @@ https://prometheus.io/docs/prometheus/latest/installation/
 5. reload your container docker restart -s SIGHUP <containername> 
 6. open prometheus UI and open targets and see three target there
 
+If You have no idea about python: 
+see any crash course in youtube before next session
