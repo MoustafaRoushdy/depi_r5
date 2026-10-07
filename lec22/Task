@@ -1,0 +1,10 @@
+1. create a docker-compose file with promtheus and alertmanager
+2. mount only for now both config files
+3. prometheus should be configured to use static configs for alert manager 
+     a. see default config file from the prometheus image
+     alerting:
+       alertmanagers:
+        - static_configs:
+           - targets:
+4. open alertmanager-discovery in prometheus and send me a screenshot
+5. push your docker-compose.yml and promtheus.yml to github
