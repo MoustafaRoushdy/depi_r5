@@ -7,4 +7,4 @@
         - static_configs:
            - targets:
 4. open alertmanager-discovery in prometheus and send me a screenshot
-5. push your docker-compose.yml and promtheus.yml to github
+5. push your docker-compose.yml and promtheus.yml and alertmanager.yml to github
