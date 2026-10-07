@@ -1,0 +1,11 @@
+global:
+
+route:
+  receiver: 'telegram-notifications'
+
+receivers:
+- name: 'telegram-notifications'
+  telegram_configs:
+    - bot_token_file: /etc/alertmanager/.telegram_bot_token  
+      chat_id: 514925728
+      message: "one of our servers is down"

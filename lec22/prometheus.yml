@@ -1,0 +1,21 @@
+global:
+  scrape_interval:     15s 
+
+alerting:
+ alertmanagers:
+   - static_configs:
+       - targets:  [alert-manager:9093]
+
+rule_files:
+  - "alerting.rules.yaml"
+         
+scrape_configs:
+
+  - job_name: 'prometheus'
+    scrape_interval: 5s
+    static_configs:
+      - targets: ['localhost:9090']
+
+  - job_name: "linux servers"
+    static_configs:
+      - targets: ["54.210.154.231:9100", "100.26.23.71:9100"]

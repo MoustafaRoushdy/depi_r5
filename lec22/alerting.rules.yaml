@@ -1,0 +1,11 @@
+groups:
+- name: example
+  #labels:
+  #  team: DevOps
+  rules:
+  - alert: Server_Availability
+    expr: up{job="linux servers"} == 0 
+    for: 10s 
+    keep_firing_for: 5m
+    labels:
+      severity: High

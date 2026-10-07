@@ -8,3 +8,9 @@
            - targets:
 4. open alertmanager-discovery in prometheus and send me a screenshot
 5. push your docker-compose.yml and promtheus.yml and alertmanager.yml to github
+
+
+1. create a file ".telegram_bot_token", add your telegram bot token in it
+2. update the alert manager configuration with your chatid 
+  a. @whatchatidbot => use this bot to get your chatid
+3. update your docker compose  file to mount prometheus config, alert manager config, alerting rules, telegram bot file to the correct container
