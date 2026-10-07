@@ -14,3 +14,6 @@
 2. update the alert manager configuration with your chatid 
   a. @whatchatidbot => use this bot to get your chatid
 3. update your docker compose  file to mount prometheus config, alert manager config, alerting rules, telegram bot file to the correct container
+4. IMPORTANT => add .telegram_bot_token file to your .gitignore
+5. see prometheus and alertmanager logs if something is not working as expecting
+6. send me a screenshot from alertmanager alerts and the messages received in telegram
