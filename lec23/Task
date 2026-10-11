@@ -11,3 +11,5 @@
 
 Bouns:
 1. mount the grafana data to a local volume: https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/
+2. use env var to setup default admin password: 
+https://grafana.com/docs/grafana/latest/setup-grafana/configure-docker/#logging
