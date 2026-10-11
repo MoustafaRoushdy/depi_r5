@@ -7,3 +7,7 @@
 2. connections => add new connection => promtheus => add the url => save and test
 3. Dashboards => new => import dashboard => search about the id of node exporter dashboard and import it 
 4. screenshot from the dashboard
+
+
+Bouns:
+1. mount the grafana data to a local volume: https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/
