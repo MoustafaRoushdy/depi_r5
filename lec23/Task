@@ -1,3 +1,9 @@
 1. instrument the Fask application to monitor a Summary of the delay of the requests
 2. DONOT USE AI PLEASE 
 3. ONLY USE DOCS: https://prometheus.github.io/client_python/
+
+0. add these two IPs to your promtheus configs 52.2.157.132, 54.164.24.119
+1. Add Grafana to you docker compose
+2. connections => add new connection => promtheus => add the url => save and test
+3. Dashboards => new => import dashboard => search about the id of node exporter dashboard and import it 
+4. screenshot from the dashboard
