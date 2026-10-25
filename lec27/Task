@@ -1,0 +1,12 @@
+1. Create EC2 instance in your sandbox
+2. Make sure that port 22, 90 are open in it's security group
+3. Install nginx using dnf ( dnf install nginx)
+4. edit it's config file to make listen on port 90 
+5. create /usr/share/nginx/xyz directory
+6. add index file in the newly created directly including your name
+7. edit nginx config file to update the root dir to /usr/share/nginx/xyz
+8. run "nginx -t" to check nginx config sytax
+9. run "systemctl reload nginx" to reload nginx
+10. open duckdns.org and create a record with yourname or whatever you want and make it point to the Ec2 public IP
+11. access the server using the domain and port 90
+12. send me a screenshot from the nginx.conf and from the server accessed
