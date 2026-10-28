@@ -1,0 +1,6 @@
+1. install nginx and start it in amazon linxu 2023
+2. configure two virtual hosts with two different domains
+   1. xyz.com  served from /usr/share/nginx/pythonapp  (index.html < hello from python app )
+   2. example.com served from /usr/share/nginx/rubyapp (index.html < hello from ruby app )
+4. nginx -t 
+5. systemctl reload ngnix
