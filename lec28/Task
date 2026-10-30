@@ -4,3 +4,42 @@
    2. example.<yourname>.ducksdns.org served from /usr/share/nginx/rubyapp (index.html < hello from ruby app )
 4. nginx -t 
 5. systemctl reload ngnix
+
+
+Task 1
+1. start a server, make sure to allow both http,https and start nginx (systemctl start nginx)
+2. install nginx, certbot, python-certbot-nginx
+3. start nginx
+4. certbot certonly --nginx
+5. see /etc/letsencrypt/renewal/<yourname>.duckdns.org.conf
+   a. to see where is the private key and the certificate
+6. edit /etc/nginx/nginx.conf  to uncommend the ssl section and add necessary details
+7. nginx -t > to verify the configuratin
+8. systemctl reload nginx
+
+Task 2
+1. configure nginx to work as a loadbalancer 
+2. use Weighted Roundroubin 
+     1. node1 (80%) 
+     2. node2 (10%) 
+     3. node3 (10%) 
+see examples from here: https://nginx.org/en/docs/http/ngx_http_upstream_module.html
+
+use this userdata 
+#!/bin/bash
+dnf install -y httpd
+systemctl start httpd
+echo $(hostname) > /var/www/html/index.html
+
+Task 3
+1. Use ip_hash method for loadbalancing instead of Weighted Roundroubin
+2. for help just search for ip_hash in the above docs
+
+Task 4
+1. use 	least_conn method for loadbalancing instead of ip_hash
+2. for help just search for  least_conn in the above docs
+
+
+Task 5
+1. Please generate a self signed certificate for <yourname>.duckdns.org
+for your reference: https://www.baeldung.com/openssl-self-signed-cert
