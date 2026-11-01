@@ -9,3 +9,10 @@ git log => see commited area ( your latest commits)
 git log --name-only => see changed files
 git log --oneline => see a commit in a line commithash + message
 git log -n <#> => display only specific number of logs
+
+
+git branch => see branch and checked branch 
+git branch <nameofthebranch> => create new branch
+git switch <nameofthebranch> || git checkout <nameofthebranch> => siwth to that branch
+git checkout <nameofthebranch> => create a new branch and switch to it
+git log <branchname> => see the log of a specific branch
