@@ -1,0 +1,4 @@
+git remote add <alias> <remote url>
+               origin
+git remote -v
+git push --set-upstream <alias> <branch>
