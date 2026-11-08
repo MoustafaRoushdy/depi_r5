@@ -1,0 +1,2 @@
+git rebase <branch> => to rebase current branch to that branch
+git rebase -i <commit> or git rebase -i HEAD~<#commits> => to do interactive rebaese ( squash )
