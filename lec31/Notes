@@ -7,3 +7,10 @@ git revert <commit hash> => revert the change in a new commit
 git reset --soft <commi hash> => remove all commits after this commit and add their changes to your working dir
 git reset --hard <commit hash> => remove all commits after this commit and their changes
 git reset OR git reset --mixed => remove all commits after this commit and stage the changes in them
+
+
+git stash  => add changes to the stash
+git stash list => list the stash
+git stash show stash@{index} => show a certain stash change
+git stash pop => remove a change from the stash
+git stash pop stash@{index}
