@@ -2,3 +2,8 @@ git rebase <branch> => to rebase current branch to that branch
 git rebase -i <commit> or git rebase -i HEAD~<#commits> => to do interactive rebaese ( squash )
 
 git cherry-pick <commit hash> 
+
+git revert <commit hash> => revert the change in a new commit
+git reset --soft <commi hash> => remove all commits after this commit and add their changes to your working dir
+git reset --hard <commit hash> => remove all commits after this commit and their changes
+git reset OR git reset --mixed => remove all commits after this commit and stage the changes in them
