@@ -1,0 +1,2 @@
+1. update task 4 to use the bucket name as variable
+2. add the variable value in terraform.tfvars file
