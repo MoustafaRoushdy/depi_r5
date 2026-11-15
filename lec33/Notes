@@ -1,0 +1,2 @@
+CLI => Env var => terraform.tfvars => *.tfvars.auto => default => prompt
+
