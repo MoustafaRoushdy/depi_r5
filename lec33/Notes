@@ -1,2 +1,6 @@
 CLI => Env var => terraform.tfvars => *.tfvars.auto => default => prompt
 
+to reference attribute of a resource in terraform => <resourcetype>.<resorucename>.<attributename>
+
+to see all attributes of a resource tf state show <resourceaddress>
+                                                  <resourcetype.resourcename>
