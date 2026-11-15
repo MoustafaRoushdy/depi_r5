@@ -1,2 +1,7 @@
 1. update task 4 to use the bucket name as variable
 2. add the variable value in terraform.tfvars file
+
+
+3. create a network.tf file 
+4. create a vcp and two subnets in it 
+5. add explicity dependencity between the two subnets and the s3 

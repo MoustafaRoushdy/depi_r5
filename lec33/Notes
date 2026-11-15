@@ -4,3 +4,6 @@ to reference attribute of a resource in terraform => <resourcetype>.<resorucenam
 
 to see all attributes of a resource tf state show <resourceaddress>
                                                   <resourcetype.resourcename>
+
+depens_on = []  => for explicit dependency
+
