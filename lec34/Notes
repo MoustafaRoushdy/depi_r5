@@ -1,1 +1,2 @@
-https://kodekloud.com/studio/lab/terraform/terraform-output-variables
+tf output => to see all your outputs
+tf show => to see the state file in the terminal
