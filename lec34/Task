@@ -1,0 +1,3 @@
+create output.tf 
+create an output => it should display the private IP of your instance
+
