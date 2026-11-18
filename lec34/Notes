@@ -1,2 +1,6 @@
 tf output => to see all your outputs
 tf show => to see the state file in the terminal
+tf graph => see resources with their dependencies
+tf fmt => fix the fomrat of your tf configuration
+tf validate => validate the syntax of you configuration code
+tf providers => see list of installed providers
