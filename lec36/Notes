@@ -1,0 +1,2 @@
+tf state rm <add> => remove resource from the state file
+tf state mv <old add> <new add> => rename a resource in the state file
